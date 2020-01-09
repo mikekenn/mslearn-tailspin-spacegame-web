@@ -53,7 +53,7 @@ steps:
 - task: DotNetCoreCLI@2
   displayName: 'Publish the project - $(buildConfiguration)'
   inputs:
-    command: 'publish'
+    command: 'publish
     projects: '**/*.csproj'
     publishWebProjects: false
     arguments: '--no-build --configuration Release --output $(Build.ArtifactStagingDirectory)/Release'
